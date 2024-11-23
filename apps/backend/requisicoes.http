@@ -4,3 +4,8 @@ GET http://localhost:4000/ping
 ###
 
 GET http://localhost:4000/eventos
+
+###
+
+GET http://localhost:4000/eventos/6be95f24-6a11-4379-85f7-22a9651dff29
+
