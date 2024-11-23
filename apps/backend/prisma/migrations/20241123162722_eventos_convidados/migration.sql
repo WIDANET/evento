@@ -1,5 +1,5 @@
 -- CreateTable
-CREATE TABLE "Eventos" (
+CREATE TABLE "eventos" (
     "id" TEXT NOT NULL PRIMARY KEY,
     "alias" TEXT NOT NULL,
     "nome" TEXT NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE "Eventos" (
 );
 
 -- CreateTable
-CREATE TABLE "Convidado" (
+CREATE TABLE "convidados" (
     "id" TEXT NOT NULL PRIMARY KEY,
     "nome" TEXT NOT NULL,
     "email" TEXT NOT NULL,
@@ -21,5 +21,5 @@ CREATE TABLE "Convidado" (
     "possuiAcompanhantes" BOOLEAN NOT NULL,
     "qtdeAcompanhantes" INTEGER NOT NULL,
     "eventoId" TEXT,
-    CONSTRAINT "Convidado_eventoId_fkey" FOREIGN KEY ("eventoId") REFERENCES "Eventos" ("id") ON DELETE SET NULL ON UPDATE CASCADE
+    CONSTRAINT "convidados_eventoId_fkey" FOREIGN KEY ("eventoId") REFERENCES "eventos" ("id") ON DELETE SET NULL ON UPDATE CASCADE
 );

@@ -23,7 +23,7 @@ model Evento {
   publicoEsperado  Int
   convidados       Convidado[]
 
-  @@map("Eventos")
+  @@map("eventos")
 }
 
 model Convidado {
@@ -35,4 +35,6 @@ model Convidado {
   qtdeAcompanhantes   Int
   evento              Evento? @relation(fields: [eventoId], references: [id])
   eventoId            String?
+
+  @@map("convidados")
 }
