@@ -28,8 +28,8 @@ POST http://localhost:4000/eventos/reuniao-familia-oliveira/convidado
 Content-Type: application/json
 
 {
-    "id": "48c01a0a-26f1-4168-b43d-7e8dfc930bd4",
-    "nome": "Willian",
+    "id": "ed4e6c28-dd41-4846-bd7f-bd3c02f074a0",
+    "nome": "Alexia",
     "email": "leonardo@formacao.dev",
     "confirmado": true,
     "possuiAcompanhantes": true,

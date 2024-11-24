@@ -57,7 +57,7 @@ export class EventoPrisma {
         publicoEsperado: completo,
         convidados: completo,
       },
-      where: {alias},
+      where: { alias },
     }) as any;
   }
 }
