@@ -9,3 +9,30 @@ GET http://localhost:4000/eventos
 
 GET http://localhost:4000/eventos/6be95f24-6a11-4379-85f7-22a9651dff29
 
+###
+
+GET http://localhost:4000/eventos/validar/evento-fullstack/61f0a77c-7b5d-4981-a611-59fe582c60df
+
+
+###
+POST http://localhost:4000/eventos/acessar
+Content-Type: application/json
+
+{
+    "id": "65965e1c-8055-4795-b4a3-da93bbe97e31",
+    "senha": "familia2024"
+}
+
+###
+POST http://localhost:4000/eventos/reuniao-familia-oliveira/convidado
+Content-Type: application/json
+
+{
+    "id": "48c01a0a-26f1-4168-b43d-7e8dfc930bd4",
+    "nome": "Willian",
+    "email": "leonardo@formacao.dev",
+    "confirmado": true,
+    "possuiAcompanhantes": true,
+    "qtdeAcompanhantes": 10
+}
+
